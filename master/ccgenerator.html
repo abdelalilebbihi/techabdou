@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>مولد فيزات</title>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/abdelalilebbihi/techabdou/master/master/style.css">
+<link href="https://cdn.rawgit.com/abdelalilebbihi/techabdou/fe375e69/abdou-neo.css">
+</head>
+<body onload='n1ght();'>
+    <header>
+        <br/>
+      <section class='title'><img alt='Icon' src='http://ccgenerator.bitballoon.com/img/favicon.png'/> CCGenerator </section>
+        <div class='hh-title'> Credit Card Generator
+            <br/><i aria-hidden='true' class='fa fa-cc-mastercard'/> <i aria-hidden='true' class='fa fa-cc-discover'/> <i aria-hidden='true' class='fa fa-cc-visa'/> <i aria-hidden='true' class='fa fa-cc-jcb'/> <i aria-hidden='true' class='fa fa-cc-amex'/> <i aria-hidden='true' class='fa fa-cc-diners-club'/></div>
+    </header>
+    <br/>
+    <form class='form-horizontal' id='console' method='POST' name='console' role='form'>
+        <input name='form-name' type='hidden' value='console'/>
+        <div class='p'>
+            <div class='Ilabel'><i class='fa fa-gg'/> Enter your BIN</div>
+            <input class='input_text' id='ccpN' list='iin-predefined' maxlength='19' name='ccp' placeholder='xxxx xxxx xxxx xxxx' style='width: 175px' type='text' value=''/>
+            <datalist id='iin-predefined'>
+                <option class='bin0' value='552289'>BIN 0</option>
+                <option class='bin1' value='546479'>BIN 1</option>
+                <option class='bin2' value='512112'>BIN 2</option>
+                <option class='bin3' value='512119'>BIN 3</option>
+                <option class='bin4' value='552589'>BIN 4</option>
+            </datalist>
+        </div>
+        <br/>
+        <select class='input_text' name='ccnsp' style='display:none;'>
+            <option selected='selected'>Nenhum</option>
+        </select>
+        <div class='p'>
+            <div class='Ilabel'><i class='fa fa-plus-square'/> Include</div>
+            <div class='input_text s'>
+                <label>Data
+                  <input id='ccexpdat' name='ccexpdat' type='checkbox'/>
+                </label>
+                <label>CCV2
+                  <input id='ccvi' name='ccvi' type='checkbox'/>
+                </label>
+                <label>Bank Type
+                  <input id='ccbank' name='ccbank' type='checkbox'/>
+                </label>
+            </div>
+        </div>
+        <br/>
+        <div class='p'>
+            <div class='Ilabel'><i aria-hidden='true' class='fa fa-shopping-bag'/> Quantity</div>
+            <input class='input_text' maxlength='4' name='ccghm' style='width: 40px' type='number' value='10'/>
+        </div>
+        <div class='p'>
+            <div class='Ilabel'><i aria-hidden='true' class='fa fa-cogs'/> Format</div>
+            <select class='input_text' name='ccoudatfmt'>
+                <option selected='selected' value='CHECKER'>CHECKER</option>
+                <option value='CSV'>CSV</option>
+                <option value='XML'>XML</option>
+                <option value='JSON'>JSON</option>
+            </select>
+        </div>
+        <br/>
+        <div class='p'>
+            <div class='Ilabel'><i class='fa fa-connectdevelop'/> CCV2</div>
+            <input class='input_text' id='eccv' maxlength='4' name='eccv' style='width: 40px' type='text' value='rnd'/>
+        </div>
+        <div class='p'>
+            <div class='Ilabel'><i aria-hidden='true' class='fa fa-calendar'/> Month</div>
+            <select class='input_text' name='emeses'>
+                <option value='rnd'>Rnd</option>
+                <option value='01'>01</option>
+                <option value='02'>02</option>
+                <option value='03'>03</option>
+                <option value='04'>04</option>
+                <option value='05'>05</option>
+                <option value='06'>06</option>
+                <option value='07'>07</option>
+                <option value='08'>08</option>
+                <option value='09'>09</option>
+                <option value='10'>10</option>
+                <option value='11'>11</option>
+                <option value='12'>12</option>
+            </select>
+        </div>
+        <div class='p'>
+            <div class='Ilabel'><i aria-hidden='true' class='fa fa-calendar'/> Year</div>
+            <select class='input_text' name='eyear'>
+                <option value='rnd'>Rnd</option>
+                <option value='2016'>16</option>
+                <option value='2017'>17</option>
+                <option value='2018'>18</option>
+                <option value='2019'>19</option>
+                <option value='2020'>20</option>
+                <option value='2021'>21</option>
+                <option value='2022'>22</option>
+                <option value='2023'>23</option>
+                <option value='2024'>24</option>
+                <option value='2025'>25</option>
+            </select>
+        </div>
+      <input name='tr' type='hidden' value='1000'/>
+      <input name='L' style='width: 20px' type='hidden' value='1L'/>
+        <br/>
+        <br/> <a class='Lbutton' id='generar' name='generar'><i class='fa fa-code'/> Generate Cards</a>
+        <br/>
+        <br/>
+        <center>
+            <div class='eighty'>
+                <div>
+                    <div class='clean' id='cleanText'/>
+                </div>
+                <textarea class='textarea' id='output2' name='output2' readonly='' rows='15'/>
+            </div>
+        </center>
+    </form>
+    <br/>
+    <footer><i aria-hidden='true' class='fa fa-credit-card-alt'/><strong> Abdou Technologie </strong><i aria-hidden='true' class='fa fa-credit-card-alt'/>
+        <br/>OPEN SOURCE PROJECT
+        <br/>
+        <script id='_waukd0'>
+            var _wau = _wau || [];
+            _wau.push([&quot;small&quot;, &quot;cezjmml3gtso&quot;, &quot;kd0&quot;]);
+            (function() {
+                var s = document.createElement(&quot;script&quot;);
+                s.async = true;
+                s.src = &quot;./ds_files/js/small.js&quot;;
+                document.getElementsByTagName(&quot;head&quot;)[0].appendChild(s);
+            })();
+        </script>
+    </footer>
+
+
+
+
+
+
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://rawgit.com/abdelalilebbihi/techabdou/master/master/F4K_w78Gt0X.js'></script>
+</body>
+</html>
