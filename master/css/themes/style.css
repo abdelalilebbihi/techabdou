@@ -831,7 +831,7 @@ header button#showRight.active{
     right:0;
     width:40%;
 }
-#clintts ul li{
+#clintts {
     background-color:#333333;
     border:1px solid #f7f7f7;
     float:right;
@@ -841,13 +841,13 @@ header button#showRight.active{
     text-align:center;
     width:277px;
 }
-#clintts ul li:nth-child(4n+1){
+#clintts:nth-child(4n+1){
     clear:both;
 }
-#clintts ul li:nth-child(4n){
+#clintts:nth-child(4n){
     margin:0 auto 10px;
 }
-#clintts ul li img{
+#clintts img{
     width:100%;
     height:188px;
     display:block;
@@ -857,7 +857,7 @@ header button#showRight.active{
     -o-transition:all 0.4s ease-in-out;
     transition:all 0.4s ease-in-out;
 }
-#clintts ul li:hover img{
+#clintts:hover img{
     opacity:0.5;
     -webkit-transform:translateY(-42px);
     -moz-transform:translateY(-42px);
@@ -865,7 +865,7 @@ header button#showRight.active{
     -o-transition:translateY(-42px);
     transform:translateY(-42px);
 }
-#clintts ul li a.link{
+#clintts a.link{
     background:#e84936 url("images/linkicon.png") no-repeat scroll center center;
     display:block;
     height:40px;
@@ -885,7 +885,7 @@ header button#showRight.active{
     backface-visibility:hidden;
     -moz-osx-font-smoothing:grayscale;
 }
-#clintts ul li a.link:before{
+#clintts a.link:before{
     content:'';
     position:absolute;
     border:#e84936 solid 3px;
@@ -898,14 +898,14 @@ header button#showRight.active{
     -webkit-transition-property:top,right,bottom,left;
     transition-property:top,right,bottom,left;
 }
-#clintts ul li a.link:hover:before,#clintts ul li a.link:focus:before,#clintts ul li a.link:active:before{
+#clintts a.link:hover:before,#clintts a.link:focus:before,#clintts a.link:active:before{
     top:-5px;
     right:-5px;
     bottom:-5px;
     left:-5px;
 }
-#clintts ul li a.zoom{
-    background:#e84936 url("images/zoomicon.png") no-repeat scroll center center;
+#clintts a.zoom{
+    background:#e84936 url("https://www.mngez.com/wp-content/themes/Mngez/images/zoomicon.png") no-repeat scroll center center;
     display:block;
     height:40px;
     opacity:0;
@@ -924,7 +924,7 @@ header button#showRight.active{
     backface-visibility:hidden;
     -moz-osx-font-smoothing:grayscale;
 }
-#clintts ul li a.zoom:before{
+#clintts a.zoom:before{
     content:'';
     position:absolute;
     border:#e84936 solid 3px;
@@ -937,21 +937,21 @@ header button#showRight.active{
     -webkit-transition-property:top,right,bottom,left;
     transition-property:top,right,bottom,left;
 }
-#clintts ul li a.zoom:hover:before,#clintts ul li a.zoom:focus:before,#clintts ul li a.zoom:active:before{
+#clintts a.zoom:hover:before,#clintts a.zoom:focus:before,#clintts a.zoom:active:before{
     top:-5px;
     right:-5px;
     bottom:-5px;
     left:-5px;
 }
-#clintts ul li:hover a.link{
+#clintts:hover a.link{
     right:80px;
     opacity:1;
 }
-#clintts ul li:hover a.zoom{
+#clintts:hover a.zoom{
     left:80px;
     opacity:1;
 }
-#clintts ul li .deitls{
+#clintts .deitls{
     background-color:#e84936;
     bottom:0;
     color:#ffffff;
@@ -971,7 +971,7 @@ header button#showRight.active{
     -moz-transition:-moz-transform 0.4s,opacity 0.1s 0.3s;
     transition:transform 0.4s,opacity 0.1s 0.3s;
 }
-#clintts ul li:hover .deitls{
+#clintts:hover .deitls{
     opacity:1;
     -webkit-transform:translateY(0px);
     -moz-transform:translateY(0px);
