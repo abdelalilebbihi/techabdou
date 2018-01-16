@@ -2247,7 +2247,7 @@ span.badge.new{
     border-radius:2px
 }
 span.badge.new:after{
-    content:" new"
+    content:"جديد"
 }
 nav ul a span.badge{
     position:static;
