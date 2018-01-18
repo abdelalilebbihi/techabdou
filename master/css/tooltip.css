@@ -23,6 +23,7 @@
 	color: #fff;
 }
 .color-3 .container {
+	background: url(../img/map.jpg) no-repeat 50% 50%;
 	background-size: cover;
 	min-height: 1000px;
 }
@@ -158,7 +159,7 @@
 	position: relative;
 }
 .dummy blockquote {
-	font-family: &#39;Kalam&#39;, cursive;
+	font-family: 'Kalam', cursive;
 	font-size: 2.5em;
 	max-width: 700px;
 	text-align: center;
@@ -168,13 +169,13 @@
 	font-size: 0.5em;
 }
 .dummy blockquote footer::before {
-	content: &#39;â&#8364;&#8221;&#39;;
+	content: 'â€”';
 }
 .dummy-avatar {
 	margin-top: 7em;
 	text-align: center;
 }
-.dummy-avatar &gt; div {
+.dummy-avatar > div {
 	display: inline-block;
 	margin: 0 1em;
 }
@@ -202,6 +203,7 @@
 /* Trigger text */
 
 .tooltip-item {
+	background: rgba(0,0,0,0.3);
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 700;
@@ -210,7 +212,7 @@
 /* Gap filler */
 
 .tooltip-item::after {
-	content: &#39;&#39;;
+	content: '';
 	position: absolute;
 	width: 360px;
 	height: 20px;
@@ -294,7 +296,7 @@
 /* Arrow */
 
 .tooltip-content::after {
-	content: &#39;&#39;;
+	content: '';
 	top: 100%;
 	left: 50%;
 	border: solid transparent;
