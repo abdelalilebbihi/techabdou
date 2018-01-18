@@ -203,7 +203,6 @@
 /* Trigger text */
 
 .tooltip-item {
-	background: rgba(0,0,0,0.3);
 	cursor: pointer;
 	display: inline-block;
 	font-weight: 700;
