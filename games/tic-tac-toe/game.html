@@ -1,0 +1,130 @@
+
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+ 
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,700,900' rel='stylesheet' type='text/css'>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+
+  <link href='http://rawgit.com/abdelalilebbihi/techabdou/master/games/tic-tac-toe/style.css' rel='stylesheet' type='text/css'>
+ <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css'><link rel='stylesheet prefetch' href='//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'><link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+
+  <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-wrapper z-depth-2">
+      <a href="#" class="brand-logo center">Tic-Tac-Toe</a>
+      <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="mailto:info.abdelali1998@gmail.com"><i class="icon-color fa fa-envelope"></i></a></li>
+        <li><a href="https://www.facebook.com/lebbihi.dz" target="_blank"><i class="icon-color fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/mutantspore" target="_blank"><i class="icon-color fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCUfaK9PIgh_IAt-8pUjdYdw" target="_blank"><i class="icon-color fa fa-youtube"></i></a></li>
+      </ul>
+            <div class="black side-nav" id="mobile-menu">
+                <div class="container middle person">
+                    <img class="portrait" src="http://lh3.googleusercontent.com/-VaY8h3ZK4y8/AAAAAAAAAAI/AAAAAAAAEkk/QnO9HU_InEA/w70/photo.jpg">
+                    <span>Abdou Tech</span>
+                </div>
+                <ul class="contact">
+                    <li><a href="mailto:info.abdelali1998@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://www.facebook.com/lebbihi.dz" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/mutantspore" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCUfaK9PIgh_IAt-8pUjdYdw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+
+
+            </div>
+    </div>
+  </nav>
+
+
+
+
+
+<div class="container">
+
+  <!-- Game Board -->
+  <div id="board" class="container">
+    <div class="row top valign-wrapper">
+      <div class="square left col s4 valign waves-effect waves-light flow-text" id="0"></div>
+      <div class="square middle col s4 valign waves-effect waves-light flow-text" id="1"></div>
+      <div class="square right col s4 valign waves-effect waves-light flow-text" id="2"></div>
+    </div>
+    <div class="row middle valign-wrapper">
+      <div class="square left col s4 valign waves-effect waves-light flow-text" id="3"></div>
+      <div class="square middle col s4 valign waves-effect waves-light flow-text" id="4"></div>
+      <div class="square right col s4 valign waves-effect waves-light flow-text" id="5"></div>
+    </div>
+    <div class="row bottom valign-wrapper">
+      <div class="square left col s4 valign waves-effect waves-light flow-text" id="6"></div>
+      <div class="square middle col s4 valign waves-effect waves-light flow-text" id="7"></div>
+      <div class="square right col s4 valign waves-effect waves-light flow-text" id="8"></div>
+    </div>
+  </div>
+
+</div>
+
+
+  <!-- Score Board -->
+  <div id="score-board" class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="card-panel transparent">
+          <span class="bluetext">
+            <div class="row center-align">
+              <div class="col s3">
+                <span class="flow-text center-align">
+                  <span><i class="fa fa-2x fa-user"></i></span>
+                  <span id="score0" class="score">0</span>
+                </span>
+              </div>
+              <div class="col s3">
+                <span class="flow-text center-align">
+                  <i class="fa fa-2x fa-ban"></i>
+                  <span id="score1" class="score">0</span>
+                </span>
+              </div>
+              <div class="col s3">
+                <span class="flow-text center-align">
+                  <i class="fa fa-2x fa-laptop"></i>
+                  <span id="score2" class="score">0</span>
+                </span>
+              </div>
+              <div class="col s3">
+                <a id="new-game" class="btn-floating btn-large waves-effect waves-light amber darken-4"><i class="medium material-icons">replay</i></a>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Get Player Token Modal -->
+  <div id="chooseModal" class="modal amber darken-4">
+    <div class="modal-content">
+      <div class="row">
+        <div class="choose col s6 waves-effect waves-light" id="X"><i class='fa fa-times'></i></div>
+        <div class="choose col s6 waves-effect waves-light" id="O"><i class='fa fa-circle-o'></i></div>
+      </div>
+    </div>
+  </div>
+<script type='text/javascript' src='http://rawgit.com/abdelalilebbihi/techabdou/master/games/tic-tac-toe/java.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'/>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js'/>
+</body>
+</html>
